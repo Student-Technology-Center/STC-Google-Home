@@ -1,0 +1,34 @@
+{
+  "actions": [
+    {
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "studentTechnologyCenter"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN"
+      }
+    },
+    {
+      "name": "INFO",
+      "fulfillment": {
+        "conversationName": "studentTechnologyCenter"
+      },
+      "intent": {
+        "name": "com.wwustc.google.home.INFO",
+        "trigger": {
+          "queryPatterns": [
+            {"queryPattern": "Tell me about the STC"},
+            {"queryPattern": "Tell me about the Student Technology Center"},
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "studentTechnologyCenter": {
+      "name": "studentTechnologyCenter",
+      "url": "https://sekai.example.com/sekai-app"
+    }
+  }
+}
