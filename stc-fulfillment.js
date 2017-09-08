@@ -134,7 +134,7 @@ function demoIntent(app) {
 
     'As a last example of the feature \'speak as \', I can also say dates! ' +
 
-    '<say-ass interpret-as="date" format="ymd">' +
+    '<say-as interpret-as="date" format="ymd">' +
     '1960-09-10' +
     '</say-as>' +
 
